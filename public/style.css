@@ -1,0 +1,151 @@
+.piece {
+  outline: 0;
+  border: 0;
+  width: 60px;
+  height: 60px;
+  margin: 0;
+  background-color: transparent;
+  -moz-transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.piece:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.piece-transparent {
+  outline: 0;
+  border: 0;
+  width: 60px;
+  height: 60px;
+  margin: 0;
+  background-color: transparent;
+  opacity: 0.5;
+}
+
+.piece-chosen {
+  border: 0;
+  width: 60px;
+  height: 60px;
+  margin: 0;
+  background-image: url('./image/chosen.png');
+  opacity: 1;
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.piece-history {
+  border: 0;
+  width: 60px;
+  height: 60px;
+  margin: 0;
+  background-image: url('./image/history.png');
+  opacity: 1;
+}
+
+.piece-possible {
+  border: 0;
+  width: 60px;
+  height: 60px;
+  margin: 0;
+  background-image: url('./image/chosen.png');
+  opacity: 0.7;
+}
+
+.piece-possible:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.board {
+  background-image: url("./image/main.png");
+  margin: auto;
+  height: 650px;
+  width: 590px;
+  display: block;
+  background-size: cover;
+  clear: both;
+  position: relative;
+}
+
+.chess-row {
+  clear: both;
+  height: 60px;
+  width: 540px;
+}
+
+.chess-container {
+  height: 600px;
+  width: 540px;
+  position: absolute;
+  top: 26px;
+  left: 24px;
+  margin: auto;
+}
+.chess-toolbar {
+  margin: auto;
+  display: block;
+  align-content: center;
+}
+
+
+/* Pages */
+
+.pages {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.page {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+
+/* Login Page */
+
+.login.page {
+  background-color: #000;
+}
+
+.login.page .form {
+  height: 100px;
+  margin-top: -100px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+
+.login.page .form .usernameInput {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  outline: none;
+  padding-bottom: 15px;
+  text-align: center;
+  width: 400px;
+}
+
+.login.page .title {
+  font-size: 200%;
+}
+
+.login.page .usernameInput {
+  font-size: 200%;
+  letter-spacing: 3px;
+}
+
+.login.page .title,
+.login.page .usernameInput {
+  color: #fff;
+  font-weight: 100;
+}
